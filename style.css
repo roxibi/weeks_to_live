@@ -4,8 +4,13 @@ body{
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    background-image: linear-gradient(to right, #FE6218, #C63CC3);
 }
-
+h1{
+    color: white;
+    font-weight: 400;
+  
+}
 #answer{
     font-size: 4rem;
 }
