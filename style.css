@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#answer{
+    font-size: 4rem;
+}
+form{
+    padding-top: 3rem;
+}
