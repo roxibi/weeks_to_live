@@ -1,12 +1,43 @@
 body{
+   
+    
+    font-family: 'Montserrat', sans-serif;
+}
+.gradient{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    width: 100%;
     background-image: linear-gradient(to right, #FE6218, #C63CC3);
-    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    min-height: 200px;
+    z-index: 1;
 }
+
+.gradient::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to left,
+      #FE6218,
+      #C63CC3
+    );
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  .gradient:hover::before {
+    opacity: 1;
+  }
+
+
+
 h1{
     color: beige;
     font-weight: 400;
@@ -23,4 +54,8 @@ form{
 p{
     font-size: 1.5rem;
     color: beige;
+}
+#btn{
+border: none;
+
 }
