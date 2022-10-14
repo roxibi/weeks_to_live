@@ -9,6 +9,7 @@ btn.addEventListener("click", (e) => {
   console.log(yearsLeft);
   const weeksLeft = yearsLeft * 52;
   console.log(weeksLeft);
-  answer.innerHTML = weeksLeft;
+  answer.innerHTML = input.value==='' ? '???': weeksLeft;
+
   input.value = "";
 });
