@@ -11,7 +11,7 @@ btn.addEventListener("click", (e) => {
     const weeksLeft = yearsLeft * 52;
     console.log(weeksLeft);
     answer.innerHTML=weeksLeft;
-    input.value='';
+       input.value='';
 })
 
 
