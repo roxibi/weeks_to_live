@@ -1,0 +1,61 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right, #fe6218, #c63cc3);
+  position: relative;
+  min-height: 200px;
+  z-index: 1;
+}
+
+.gradient::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to left, #fe6218, #c63cc3);
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+.gradient:hover::before {
+  opacity: 1;
+}
+
+h1 {
+  color: beige;
+  font-weight: 400;
+  font-size: 3rem;
+}
+#answer {
+  font-size: 4rem;
+}
+form {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+p {
+  font-size: 1.5rem;
+  color: beige;
+}
+#btn {
+  border: none;
+  background: beige;
+  border-radius: 10px;
+  height: 1.5rem;
+  margin: 0;
+}
+#input {
+  box-sizing: border-box;
+  height: 1.5rem;
+  border: none;
+  margin-right: 5px;
+}
