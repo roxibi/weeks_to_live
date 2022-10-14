@@ -5,10 +5,12 @@ body{
     flex-direction: column;
     height: 100vh;
     background-image: linear-gradient(to right, #FE6218, #C63CC3);
+    font-family: 'Montserrat', sans-serif;
 }
 h1{
-    color: white;
+    color: beige;
     font-weight: 400;
+    font-size: 3rem;
   
 }
 #answer{
@@ -16,7 +18,9 @@ h1{
 }
 form{
     padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 p{
-    font-size: 1rem;
+    font-size: 1.5rem;
+    color: beige;
 }
