@@ -1,5 +1,7 @@
 const btn = document.querySelector("#btn");
-const answer = document.querySelector("#answer");
+const answerW = document.querySelector("#answerW");
+const answerD = document.querySelector("#answerD")
+const answerM = document.querySelector("#answerM")
 const input = document.querySelector("#input");
 
 btn.addEventListener("click", (e) => {
@@ -8,10 +10,12 @@ btn.addEventListener("click", (e) => {
   const yearsLeft = 85 - input.value;
   console.log(yearsLeft);
   const weeksLeft = yearsLeft * 52;
+  const daysLeft = weeksLeft * 7;
+  const monthsLeft = yearsLeft *12;
   console.log(weeksLeft);
-  answer.innerHTML = input.value==='' ? '???': weeksLeft;
-
-  
+  answerW.innerHTML = input.value==='' ? '___': weeksLeft;
+  answerM.innerHTML = input.value==='' ? '___': monthsLeft;
+  answerD.innerHTML = input.value==='' ? '___': daysLeft;
   input.value = "";
 
 });
