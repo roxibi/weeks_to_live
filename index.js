@@ -9,6 +9,10 @@ btn.addEventListener("click", (e) => {
   console.log(yearsLeft);
   const weeksLeft = yearsLeft * 52;
   console.log(weeksLeft);
-  answer.innerHTML = input.value==='' ? '???': weeksLeft;
-  input.value = "";
-});
+  function cases () {if (input.value>=0 && input.value<=84) {
+    answer.innerHTML = weeksLeft;} else if (input.value>=85) {answer.innerHTML = 'more than enough';}
+    else {answer.innerHTML='???'};  
+    console.log(answer);
+      input.value = "";}
+      return cases()
+  });
