@@ -45,6 +45,8 @@ form {
 p {
   font-size: 1.5rem;
   color: beige;
+  text-align: center;
+  line-height: 3rem;
 }
 #btn {
   border: none;
