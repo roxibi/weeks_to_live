@@ -38,7 +38,13 @@ h1 {
   font-weight: 400;
   font-size: 3rem;
 }
-#answer {
+#answerW {
+  font-size: 4rem;
+}
+#answerD {
+  font-size: 4rem;
+}
+#answerM {
   font-size: 4rem;
 }
 form {
