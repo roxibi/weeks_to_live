@@ -4,6 +4,7 @@ const answerD = document.querySelector("#answerD")
 const answerM = document.querySelector("#answerM")
 const input = document.querySelector("#input");
 
+//idea: wrap paragraph in a div and change contents of div if number is over 85... or try switch statement
 btn.addEventListener("click", (e) => {
   e.preventDefault();
   console.log(input.value);
